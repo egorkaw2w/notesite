@@ -1,0 +1,66 @@
+:root {
+  --background-color: #3c3e44;
+  --card-color: #ffffff;
+}
+
+body {
+  background-color: var(--background-color);
+}
+a {
+  position: relative;
+  z-index: 0;
+}
+.tip-card {
+  transition: 1s;
+  background-color: var(--card-color);
+  border-radius: 25px;
+  height: 250px;
+  min-height: 150px;
+  max-height: 250px;
+  position: relative;
+  z-index: -1;
+  &:hover{
+    transition: 0.5s;
+    box-shadow: 1px 1px 1px 10px #6666664d ;
+  }
+}
+.tip-card .tip-header .tip-info .tip-description {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+.tip-card .tip-header img {
+  width: 34px;
+  height: 48px;
+}
+.tip-card .tip-content .tip-text {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+.tip-card .tip-content .edit-btn {
+  transition: 0.6s;
+  position: relative;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  border-radius: 100%;
+  cursor: pointer;
+  z-index: 999;
+  &:hover {
+    transition: 0.4s;
+    box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.137);
+    /* animation: jumping 0.4s 1 ease-in-out ; */
+  }
+}
+
+.btn-up{
+  position: relative;
+  transform:  translateY(-6px);
+}
+

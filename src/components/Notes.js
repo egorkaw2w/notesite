@@ -26,6 +26,19 @@ const editButton = (event) => {
       }, 230);
     
   };
+  const cards = document.querySelectorAll('.tip-card')
+
+  const dragEnter = (event) => {
+    console.log("Я эт отработал, я молодец, вот чё даю:", event.target ); 
+  }
+
+
+  useEffect(() => {
+    cards.forEach(card => {
+      card.addEventListener('dragenter', dragEnter)
+    })
+  }
+  ,[])
 
   return (
     <div className="container   ">

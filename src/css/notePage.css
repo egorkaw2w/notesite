@@ -1,0 +1,40 @@
+.note-card-info{
+    background-color: white;
+    border-right: 1px solid #000;
+    color: black;
+}
+.title {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.description {
+    color: rgba(128, 128, 128, 0.692);
+}
+.back-btn{
+    border-radius: 10px;
+    width: 100px;
+    background-color: transparent;
+    &:hover{
+        transition: 0.4s;
+        background-color: gray;
+        color: white;
+        box-shadow: 0px 0px 0px 5px rgba(128, 128, 128, 0.247);
+    }
+}
+.edit-btn {
+    transition: 0.6s;
+    position: relative;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 100%;
+    cursor: pointer;
+    z-index: 999;
+    &:hover {
+      transition: 0.4s;
+      box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.137);
+      /* animation: jumping 0.4s 1 ease-in-out ; */
+    }
+  }
